@@ -6,7 +6,7 @@
     background-color: transparent; 
     border-color: transparent;
     border: transparent;
-    color: black;
+    color: blue;
     padding: 1px 1px;
     text-align: center;
     text-decoration: none;
@@ -55,15 +55,6 @@
 
 </body>
 </html>
-<script>
-   let webCount;
-</script>
-
-<p id="demo"></p>
-
-<script>
-  document.getElementById("demo").innerText = "Web Count: "+webCount
-</script>
 <button class="button button2"
     onclick="document.location='webBuild.html'" target="_blank"
     
@@ -83,13 +74,9 @@
     onclick="OpenWindowsDownload()"
     >Windows Download
 </button>
-<button onclick="ChangeCount()">Count</button>
+
 <script>
-    function ChangeCount() {
-      
-        webCount = webCount + 1;
-      
-    }
+
     function OpenMacDownload() {
       window.open("https://www.dropbox.com/scl/fi/grg91ip4zdpek28v8uqn7/The-Split-Crater-Demo.app.zip?rlkey=cbggfng4twwt82h5enlywhu9e&st=qjhvqhg3&dl=1");
     }
