@@ -53,10 +53,15 @@
 
 </body>
 </html>
-<!-- <script>
-  webCount = 0;
-</script> -->
-<p>Web Count: <script>document.write(webCount)</script></p>
+<script>
+  webCount = 0
+</script>
+
+<p id="demo"></p>
+
+<script>
+  document.getElementById("demo").innerText = "Web Count: "+webCount
+</script>
 <button class="button button2"
     onclick="document.location='webBuild.html'" target="_blank"
     onclick="ChangeCount()"
@@ -79,7 +84,7 @@
 <script>
     function ChangeCount() {
       
-        webCount += 1;
+        webCount += 1
       
     }
     function OpenMacDownload() {
