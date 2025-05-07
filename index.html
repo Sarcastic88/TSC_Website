@@ -53,9 +53,15 @@
 
 </body>
 </html>
-
+<py>
+  webCount = webCount
+</py>
+<p>Web Count: <py>webCount</py>></p>
 <button class="button button2"
-    onclick="document.location='webBuild.html'" target="_blank">Web Build
+    onclick="document.location='webBuild.html'" target="_blank"
+    onclick="ChangeCount()"
+    >Web Build
+    
 </button>
 
 <!-- <button class="button button2" -->
@@ -71,6 +77,11 @@
 </button>
 
 <script>
+    function ChangeCount() {
+      <py>
+        webCount += 1
+      </py>
+    }
     function OpenMacDownload() {
       window.open("https://www.dropbox.com/scl/fi/grg91ip4zdpek28v8uqn7/The-Split-Crater-Demo.app.zip?rlkey=cbggfng4twwt82h5enlywhu9e&st=qjhvqhg3&dl=1");
     }
